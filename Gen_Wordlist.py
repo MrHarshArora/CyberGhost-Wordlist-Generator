@@ -4,6 +4,11 @@ import string
 import argparse
 import itertools
 from datetime import datetime
+def clr():
+    if os.name == 'nt':
+        os.system('cls')
+    else:
+        os.system('clear')
 print (' CyberGhost Wordlist Generator')
 def wordlist(chrs, min_length, max_length, output):
     if min_length > max_length:
